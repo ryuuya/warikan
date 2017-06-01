@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./last_test.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <script src="dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+  <title>Warikan</title>
+</head>
+<body>
+  <div class="wrrper">
+    <header>WARIKAN</header>
+    <div id="menu">
+      <input type="checkbox" class="yakusyoku" name="syatyou" value="社長">社長
+      <input type="checkbox" class="yakusyoku" name="butyou" value="部長">部長
+      <input type="checkbox" class="yakusyoku" name="katyou" value="課長">課長
+    </div>
+
+   <div id="sum">
+      <input placeholder="金額" id="money_total" type="text">
+      <input placeholder="人数" id="member_total" type="text">
+      <input type="button" value="割り勘開始" onclick="Warikan()">
+  </div>
+
+
+    <div id="total">
+      TOTAL
+    </div>
+
+    <ul>
+      <li id="manager">重役</li>
+      <li id="per_person">1人あたりは</li>
+    </ul>
+
+  </div>
+  <script src="./warikan.js"></script>
+</body>
+</html>
